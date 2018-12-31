@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 enum gameType {
     case easy
@@ -17,6 +18,29 @@ enum gameType {
 }
 
 class MenuVC : UIViewController {
+    
+    var audioPlayer = AVAudioPlayer()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "8 Bit Adventure", ofType: "mp3")!))
+            audioPlayer.prepareToPlay()
+            
+            let audioSession = AVAudioSession.sharedInstance()
+            
+            do {
+                try audioSession.setCategory(.playback, mode: .default, options: [])
+            }
+            catch {
+                
+            }
+        }
+        catch {
+            print(error)
+        }
+        audioPlayer.play()
+    }
     
     @IBAction func Player2(_ sender: Any) {
         moveToGame(game: .player2)

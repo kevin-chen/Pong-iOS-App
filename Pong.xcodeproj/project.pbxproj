@@ -18,7 +18,8 @@
 		FB3F668421DA35940076A06F /* PongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3F668321DA35940076A06F /* PongTests.swift */; };
 		FB3F668F21DA35940076A06F /* PongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3F668E21DA35940076A06F /* PongUITests.swift */; };
 		FBC87A1B21DA5BC6006F0D1B /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC87A1A21DA5BC6006F0D1B /* MenuVC.swift */; };
-		FBC87A1D21DA660F006F0D1B /* pong.png in Resources */ = {isa = PBXBuildFile; fileRef = FBC87A1C21DA660F006F0D1B /* pong.png */; };
+		FBC87A1F21DAA082006F0D1B /* pong.png in Resources */ = {isa = PBXBuildFile; fileRef = FBC87A1E21DAA082006F0D1B /* pong.png */; };
+		FBC87A2221DAA1FD006F0D1B /* 8 Bit Adventure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FBC87A2121DAA1FD006F0D1B /* 8 Bit Adventure.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +57,8 @@
 		FB3F668E21DA35940076A06F /* PongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongUITests.swift; sourceTree = "<group>"; };
 		FB3F669021DA35940076A06F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBC87A1A21DA5BC6006F0D1B /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
-		FBC87A1C21DA660F006F0D1B /* pong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pong.png; path = ../../../../Desktop/pong.png; sourceTree = "<group>"; };
+		FBC87A1E21DAA082006F0D1B /* pong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pong.png; sourceTree = "<group>"; };
+		FBC87A2121DAA1FD006F0D1B /* 8 Bit Adventure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "8 Bit Adventure.mp3"; path = "Pong/8 Bit Adventure.mp3"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +109,11 @@
 		FB3F666721DA35920076A06F /* Pong */ = {
 			isa = PBXGroup;
 			children = (
-				FBC87A1C21DA660F006F0D1B /* pong.png */,
+				FBC87A1E21DAA082006F0D1B /* pong.png */,
 				FB3F666821DA35920076A06F /* AppDelegate.swift */,
 				FB3F666C21DA35920076A06F /* Actions.sks */,
 				FB3F666A21DA35920076A06F /* GameScene.sks */,
+				FBC87A2021DAA1C9006F0D1B /* Music */,
 				FB3F666E21DA35920076A06F /* GameScene.swift */,
 				FB3F667021DA35920076A06F /* GameViewController.swift */,
 				FBC87A1A21DA5BC6006F0D1B /* MenuVC.swift */,
@@ -138,6 +141,14 @@
 				FB3F669021DA35940076A06F /* Info.plist */,
 			);
 			path = PongUITests;
+			sourceTree = "<group>";
+		};
+		FBC87A2021DAA1C9006F0D1B /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				FBC87A2121DAA1FD006F0D1B /* 8 Bit Adventure.mp3 */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +219,11 @@
 				TargetAttributes = {
 					FB3F666421DA35920076A06F = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					FB3F667E21DA35940076A06F = {
 						CreatedOnToolsVersion = 10.1;
@@ -245,11 +261,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB3F667421DA35920076A06F /* Main.storyboard in Resources */,
+				FBC87A2221DAA1FD006F0D1B /* 8 Bit Adventure.mp3 in Resources */,
 				FB3F666B21DA35920076A06F /* GameScene.sks in Resources */,
 				FB3F667621DA35940076A06F /* Assets.xcassets in Resources */,
 				FB3F667921DA35940076A06F /* LaunchScreen.storyboard in Resources */,
 				FB3F666D21DA35920076A06F /* Actions.sks in Resources */,
-				FBC87A1D21DA660F006F0D1B /* pong.png in Resources */,
+				FBC87A1F21DAA082006F0D1B /* pong.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
