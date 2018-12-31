@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB3F666921DA35920076A06F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3F666821DA35920076A06F /* AppDelegate.swift */; };
+		FB3F666B21DA35920076A06F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB3F666A21DA35920076A06F /* GameScene.sks */; };
+		FB3F666D21DA35920076A06F /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB3F666C21DA35920076A06F /* Actions.sks */; };
+		FB3F666F21DA35920076A06F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3F666E21DA35920076A06F /* GameScene.swift */; };
+		FB3F667121DA35920076A06F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3F667021DA35920076A06F /* GameViewController.swift */; };
+		FB3F667421DA35920076A06F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3F667221DA35920076A06F /* Main.storyboard */; };
+		FB3F667621DA35940076A06F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3F667521DA35940076A06F /* Assets.xcassets */; };
+		FB3F667921DA35940076A06F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3F667721DA35940076A06F /* LaunchScreen.storyboard */; };
+		FB3F668421DA35940076A06F /* PongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3F668321DA35940076A06F /* PongTests.swift */; };
+		FB3F668F21DA35940076A06F /* PongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3F668E21DA35940076A06F /* PongUITests.swift */; };
+		FBC87A1B21DA5BC6006F0D1B /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC87A1A21DA5BC6006F0D1B /* MenuVC.swift */; };
+		FBC87A1D21DA660F006F0D1B /* pong.png in Resources */ = {isa = PBXBuildFile; fileRef = FBC87A1C21DA660F006F0D1B /* pong.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB3F668021DA35940076A06F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB3F665D21DA35920076A06F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB3F666421DA35920076A06F;
+			remoteInfo = Pong;
+		};
+		FB3F668B21DA35940076A06F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB3F665D21DA35920076A06F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB3F666421DA35920076A06F;
+			remoteInfo = Pong;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB3F666521DA35920076A06F /* Pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pong.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3F666821DA35920076A06F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB3F666A21DA35920076A06F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		FB3F666C21DA35920076A06F /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		FB3F666E21DA35920076A06F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		FB3F667021DA35920076A06F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FB3F667321DA35920076A06F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB3F667521DA35940076A06F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB3F667821DA35940076A06F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB3F667A21DA35940076A06F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB3F667F21DA35940076A06F /* PongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PongTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3F668321DA35940076A06F /* PongTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongTests.swift; sourceTree = "<group>"; };
+		FB3F668521DA35940076A06F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB3F668A21DA35940076A06F /* PongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3F668E21DA35940076A06F /* PongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongUITests.swift; sourceTree = "<group>"; };
+		FB3F669021DA35940076A06F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBC87A1A21DA5BC6006F0D1B /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		FBC87A1C21DA660F006F0D1B /* pong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pong.png; path = ../../../../Desktop/pong.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB3F666221DA35920076A06F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3F667C21DA35940076A06F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3F668721DA35940076A06F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB3F665C21DA35920076A06F = {
+			isa = PBXGroup;
+			children = (
+				FB3F666721DA35920076A06F /* Pong */,
+				FB3F668221DA35940076A06F /* PongTests */,
+				FB3F668D21DA35940076A06F /* PongUITests */,
+				FB3F666621DA35920076A06F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB3F666621DA35920076A06F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB3F666521DA35920076A06F /* Pong.app */,
+				FB3F667F21DA35940076A06F /* PongTests.xctest */,
+				FB3F668A21DA35940076A06F /* PongUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB3F666721DA35920076A06F /* Pong */ = {
+			isa = PBXGroup;
+			children = (
+				FBC87A1C21DA660F006F0D1B /* pong.png */,
+				FB3F666821DA35920076A06F /* AppDelegate.swift */,
+				FB3F666C21DA35920076A06F /* Actions.sks */,
+				FB3F666A21DA35920076A06F /* GameScene.sks */,
+				FB3F666E21DA35920076A06F /* GameScene.swift */,
+				FB3F667021DA35920076A06F /* GameViewController.swift */,
+				FBC87A1A21DA5BC6006F0D1B /* MenuVC.swift */,
+				FB3F667221DA35920076A06F /* Main.storyboard */,
+				FB3F667521DA35940076A06F /* Assets.xcassets */,
+				FB3F667721DA35940076A06F /* LaunchScreen.storyboard */,
+				FB3F667A21DA35940076A06F /* Info.plist */,
+			);
+			path = Pong;
+			sourceTree = "<group>";
+		};
+		FB3F668221DA35940076A06F /* PongTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB3F668321DA35940076A06F /* PongTests.swift */,
+				FB3F668521DA35940076A06F /* Info.plist */,
+			);
+			path = PongTests;
+			sourceTree = "<group>";
+		};
+		FB3F668D21DA35940076A06F /* PongUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB3F668E21DA35940076A06F /* PongUITests.swift */,
+				FB3F669021DA35940076A06F /* Info.plist */,
+			);
+			path = PongUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB3F666421DA35920076A06F /* Pong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB3F669321DA35940076A06F /* Build configuration list for PBXNativeTarget "Pong" */;
+			buildPhases = (
+				FB3F666121DA35920076A06F /* Sources */,
+				FB3F666221DA35920076A06F /* Frameworks */,
+				FB3F666321DA35920076A06F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pong;
+			productName = Pong;
+			productReference = FB3F666521DA35920076A06F /* Pong.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB3F667E21DA35940076A06F /* PongTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB3F669621DA35940076A06F /* Build configuration list for PBXNativeTarget "PongTests" */;
+			buildPhases = (
+				FB3F667B21DA35940076A06F /* Sources */,
+				FB3F667C21DA35940076A06F /* Frameworks */,
+				FB3F667D21DA35940076A06F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB3F668121DA35940076A06F /* PBXTargetDependency */,
+			);
+			name = PongTests;
+			productName = PongTests;
+			productReference = FB3F667F21DA35940076A06F /* PongTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB3F668921DA35940076A06F /* PongUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB3F669921DA35940076A06F /* Build configuration list for PBXNativeTarget "PongUITests" */;
+			buildPhases = (
+				FB3F668621DA35940076A06F /* Sources */,
+				FB3F668721DA35940076A06F /* Frameworks */,
+				FB3F668821DA35940076A06F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB3F668C21DA35940076A06F /* PBXTargetDependency */,
+			);
+			name = PongUITests;
+			productName = PongUITests;
+			productReference = FB3F668A21DA35940076A06F /* PongUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB3F665D21DA35920076A06F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "New York University";
+				TargetAttributes = {
+					FB3F666421DA35920076A06F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					FB3F667E21DA35940076A06F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = FB3F666421DA35920076A06F;
+					};
+					FB3F668921DA35940076A06F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = FB3F666421DA35920076A06F;
+					};
+				};
+			};
+			buildConfigurationList = FB3F666021DA35920076A06F /* Build configuration list for PBXProject "Pong" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB3F665C21DA35920076A06F;
+			productRefGroup = FB3F666621DA35920076A06F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB3F666421DA35920076A06F /* Pong */,
+				FB3F667E21DA35940076A06F /* PongTests */,
+				FB3F668921DA35940076A06F /* PongUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB3F666321DA35920076A06F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3F667421DA35920076A06F /* Main.storyboard in Resources */,
+				FB3F666B21DA35920076A06F /* GameScene.sks in Resources */,
+				FB3F667621DA35940076A06F /* Assets.xcassets in Resources */,
+				FB3F667921DA35940076A06F /* LaunchScreen.storyboard in Resources */,
+				FB3F666D21DA35920076A06F /* Actions.sks in Resources */,
+				FBC87A1D21DA660F006F0D1B /* pong.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3F667D21DA35940076A06F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3F668821DA35940076A06F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB3F666121DA35920076A06F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3F666F21DA35920076A06F /* GameScene.swift in Sources */,
+				FBC87A1B21DA5BC6006F0D1B /* MenuVC.swift in Sources */,
+				FB3F667121DA35920076A06F /* GameViewController.swift in Sources */,
+				FB3F666921DA35920076A06F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3F667B21DA35940076A06F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3F668421DA35940076A06F /* PongTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3F668621DA35940076A06F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3F668F21DA35940076A06F /* PongUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB3F668121DA35940076A06F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB3F666421DA35920076A06F /* Pong */;
+			targetProxy = FB3F668021DA35940076A06F /* PBXContainerItemProxy */;
+		};
+		FB3F668C21DA35940076A06F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB3F666421DA35920076A06F /* Pong */;
+			targetProxy = FB3F668B21DA35940076A06F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB3F667221DA35920076A06F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB3F667321DA35920076A06F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB3F667721DA35940076A06F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB3F667821DA35940076A06F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB3F669121DA35940076A06F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB3F669221DA35940076A06F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB3F669421DA35940076A06F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VAM3A58Y83;
+				INFOPLIST_FILE = Pong/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nyu.cs.kc3585.Pong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FB3F669521DA35940076A06F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VAM3A58Y83;
+				INFOPLIST_FILE = Pong/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nyu.cs.kc3585.Pong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FB3F669721DA35940076A06F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VAM3A58Y83;
+				INFOPLIST_FILE = PongTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nyu.cs.kc3585.PongTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pong.app/Pong";
+			};
+			name = Debug;
+		};
+		FB3F669821DA35940076A06F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VAM3A58Y83;
+				INFOPLIST_FILE = PongTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nyu.cs.kc3585.PongTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pong.app/Pong";
+			};
+			name = Release;
+		};
+		FB3F669A21DA35940076A06F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VAM3A58Y83;
+				INFOPLIST_FILE = PongUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nyu.cs.kc3585.PongUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pong;
+			};
+			name = Debug;
+		};
+		FB3F669B21DA35940076A06F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VAM3A58Y83;
+				INFOPLIST_FILE = PongUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nyu.cs.kc3585.PongUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pong;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB3F666021DA35920076A06F /* Build configuration list for PBXProject "Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB3F669121DA35940076A06F /* Debug */,
+				FB3F669221DA35940076A06F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB3F669321DA35940076A06F /* Build configuration list for PBXNativeTarget "Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB3F669421DA35940076A06F /* Debug */,
+				FB3F669521DA35940076A06F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB3F669621DA35940076A06F /* Build configuration list for PBXNativeTarget "PongTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB3F669721DA35940076A06F /* Debug */,
+				FB3F669821DA35940076A06F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB3F669921DA35940076A06F /* Build configuration list for PBXNativeTarget "PongUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB3F669A21DA35940076A06F /* Debug */,
+				FB3F669B21DA35940076A06F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB3F665D21DA35920076A06F /* Project object */;
+}
