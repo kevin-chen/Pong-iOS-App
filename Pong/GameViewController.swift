@@ -37,8 +37,8 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func goBack(_ sender: Any) {
-        let gameVC = self.storyboard?.instantiateViewController(withIdentifier: "menuVC") as! MenuVC
-        self.navigationController?.pushViewController(gameVC, animated: true)
+        let menuVC = self.storyboard?.instantiateViewController(withIdentifier: "menuVC") as! MenuVC
+        self.navigationController?.pushViewController(menuVC, animated: true)
     }
     
 

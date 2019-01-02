@@ -66,6 +66,8 @@ class GameScene: SKScene {
         botLbl.text = "\(score[0])"
     }
     
+    // MAIN LOOP STARTS HERE:  TOUCHING THE PADDLES AND UPDATE
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches{
             let location = touch.location(in: self)
@@ -100,13 +102,12 @@ class GameScene: SKScene {
             else {
                 main.run(SKAction.moveTo(x: location.x, duration: 0.2))
             }
-
         }
     }
     
     override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
         
+        // Called before each frame is rendered
         switch currentGameType {
             case .easy:
                 enemy.run(SKAction.moveTo(x: ball.position.x, duration: 1.3))
@@ -121,9 +122,6 @@ class GameScene: SKScene {
                 
                 break
         }
-        
-    
-        
         
         if ball.position.y <= main.position.y - 30 {
             addScore(playerWhoWon: enemy)
